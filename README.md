@@ -1,6 +1,6 @@
 # Five-Forty
 
-Five Forty is a creative website themed around the hour 5:40 am. It is the first issue of online magazine synthetic velvet I founded in 2018.
+[FIVE FORTY](https://www.syntheticvelvet-fiveforty.com/) is a creative website themed around the hour 5:40 am. It is the first issue of online magazine synthetic velvet I founded in 2018.
 
 synthetic velvet is a creative project that imaginatively explores the concept of time. Each issue is themed around one specific hour and takes the form of a website.
 

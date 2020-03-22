@@ -1,0 +1,593 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+div.content-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+}
+
+/* toggles: heading and paragraph */
+.toggle {
+  cursor: pointer;
+}
+
+/* night classes for toggle  */
+.slide.night {
+  background-color: black;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+h1.whitenights.night,
+p.whitenights_text.night {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+div.container-content.night {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+a.previous.night,
+a.home.night,
+a.next.night {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+/* moon: link to wikipedia */
+img.lower_left {
+  width: 65px;
+  height: 65px;
+  padding: 10px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.6;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  z-index: 1000;
+}
+
+/* nav */
+div.nav {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  height: auto;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  z-index: 1000;
+  opacity: 1;
+}
+
+a.previous,
+a.home,
+a.next {
+  padding: 0.5vh 1vh;
+  font-size: 1.5rem;
+  color: #888888;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: solid 1px black;
+  border-radius: 2.5vh;
+  text-decoration: none;
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  z-index: 1000;
+}
+
+a.home,
+a.next,
+a.home:hover,
+a.home:active,
+a.next:hover,
+a.next:active {
+  margin-left: 5px;
+}
+
+a.previous:hover,
+a.previous:active,
+a.home:hover,
+a.home:active,
+a.next:hover,
+a.next:active {
+  opacity: 0.4;
+}
+
+/* slides */
+#slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+  transition: background-color 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+img.image-slides {
+  width: 40%;
+}
+
+ul {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+div.container-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+h1.whitenights {
+  font-size: 3.5rem;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.8;
+  transition: background-color 3s;
+  color: black;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+p.whitenights_text {
+  font-size: 1.2rem;
+  line-height: 1.2em;
+  font-style: italic;
+  text-align: left;
+  width: 35%;
+  color: black;
+}
+
+span.credits {
+  font-size: 1rem;
+}
+
+/* arrows:left and right */
+button.controls,
+button.controls2 {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  z-index: 10;
+}
+
+button.controls {
+  position: absolute;
+  top: 25%;
+  right: 14%;
+}
+
+button.controls2 {
+  position: absolute;
+  top: 10%;
+  right: 14%;
+}
+
+img.arrow {
+  width: 60px;
+  height: 70px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  opacity: 0.6;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  z-index: 10;
+}
+
+/* media queries */
+/* iMac 21*/
+@media (min-width:1800px) {
+  h1.whitenights {
+    font-size: 3rem;
+    margin-bottom: 3%;
+  }
+
+  p.whitenights_text {
+    font-size: 1.3rem;
+  }
+
+  img.lower_left {
+    width: 80px;
+    height: 80px;
+  }
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 2rem;
+  }
+
+  a.home,
+  a.next,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    margin-left: 6px;
+  }
+}
+
+@media (max-width: 1240px) {
+
+  button.controls,
+  button.controls2 {
+    right: 5%;
+  }
+}
+
+@media (max-width: 1155px) {
+  p.whitenights_text {
+    width: 45%;
+  }
+}
+
+@media (max-width: 970px) {
+  p.whitenights_text {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+
+  h1.whitenights {
+    font-size: 2rem;
+  }
+
+  img.arrow {
+    width: 45px;
+    height: 55px;
+  }
+
+  img.lower_left {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 915px) {
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 1.2rem;
+    z-index: 1000;
+  }
+
+  a.home,
+  a.next,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    margin-left: 3px;
+  }
+}
+
+@media (max-width: 850px) {
+
+  button.controls,
+  button.controls2 {
+    right: 3%;
+  }
+
+  h1.whitenights {
+    font-size: 1.3rem;
+  }
+
+  p.whitenights_text {
+    font-size: 1rem;
+  }
+
+  span.credits {
+    font-size: 0.7rem;
+  }
+}
+
+/* iphone X */
+@media (min-width : 375px) and (max-width : 812px) and (orientation : landscape) {
+  img.image-slides {
+    width: 35%;
+  }
+}
+
+@media (max-width: 780px) {
+  h1.whitenights {
+    font-size: 1.8rem;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    margin-bottom: 5%;
+  }
+
+  span.credits {
+    font-size: 0.7rem;
+  }
+
+  img.arrow {
+    width: 40px;
+    height: 30px;
+  }
+
+  button.controls {
+    margin-top: 30px;
+  }
+
+  img.image-slides {
+    margin-top: 0;
+  }
+
+  img.image-slides {
+    width: 40%;
+  }
+}
+
+@media (max-width:700px) {
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 1rem;
+  }
+}
+
+/* iPhone 6, 7, & 8 in landscape*/
+@media (min-width: 375px) and (max-width: 667px) and (orientation:landscape) {
+  h1.whitenights {
+    font-size: 1.9rem;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    margin-bottom: 15%;
+  }
+}
+
+/* ipad air 2 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  p.whitenights_text {
+    font-size: 0.9rem;
+  }
+
+  h1.whitenights {
+    font-size: 2rem;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    margin-bottom: 5%;
+  }
+
+  img.image-slides {
+    width: 55%;
+  }
+}
+
+/* iPad Mini in portrait & landscape */
+@media (min-width : 768px) and (max-width: 1024px) {
+  h1.whitenights {
+    font-size: 2rem;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    margin-bottom: 5%;
+  }
+}
+
+/* iPhone 6, 7, & 8 in portrait*/
+@media (min-width: 375px) and (max-width:736px) and (orientation: portrait) {
+  img.image-slides {
+    width: 70%;
+  }
+
+  h1.whitenights {
+    font-size: 1.3rem;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+  }
+
+  p.whitenights_text,
+  span.credits {
+    font-size: 0.7rem;
+  }
+}
+
+/* iPhone 6, 7, & 8 in landscape*/
+@media (min-width: 375px) and (max-width: 736px) and (orientation:landscape) {
+  h1.whitenights {
+    font-size: 1.2rem;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+  }
+
+  p.whitenights_text,
+  span.credits {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-height: 650px) {
+  h1.whitenights {
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+  }
+
+  p.whitenights_text,
+  span.credits {
+    font-size: 0.7rem;
+  }
+
+  img.arrow {
+    width: 25px;
+    height: 35px;
+  }
+
+  button.controls2 {
+    padding-top: 15px;
+  }
+
+  img.lower_left {
+    width: 45px;
+    height: 45px;
+  }
+
+  button.controls,
+  button.controls2 {
+    right: 2%;
+  }
+}
+
+@media (max-height:500px) {
+  h1.whitenights {
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+  }
+
+  p.whitenights_text,
+  span.credits {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+
+  p.whitenights_text,
+  span.credits {
+    font-size: 0.6rem;
+  }
+
+  button.controls2 {
+    margin-bottom: 15px;
+  }
+
+  h1.whitenights {
+    margin-bottom: 5%;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+  }
+
+  img.image-slides {
+    width: 60%;
+  }
+}
+
+@media (max-width: 450px) {
+  button.controls {
+    top: 25%;
+  }
+
+  h1.whitenights {
+    font-size: 1.1rem;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+  }
+
+  p.whitenights_text,
+  span.credits {
+    font-size: 0.6rem;
+  }
+}
+
+/* iPhone 4/4S (landscape mode)*/
+@media (min-width: 320px) and (max-width: 480px) and (orientation:landscape) {
+  h1.whitenights {
+    margin-bottom: 3%;
+  }
+}
+
+@media (max-height:280px) {
+  div.nav {
+    bottom: 0.5rem;
+  }
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 0.7rem;
+  }
+}

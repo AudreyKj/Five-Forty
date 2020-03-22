@@ -1,0 +1,594 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* barba transitions
+.fade-leave-active,
+.fade-enter-active {
+  transition: opacity 0.3s ease;
+}
+
+/*barba transitions: initial state
+.fade-leave {
+  opacity: 1;
+}
+
+/* barba transitions: state
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter {
+  opacity: 0 ;
+}
+
+.fade-enter-to {
+  opacity: 0;
+}*/
+/* NAV */
+div.nav {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  height: auto;
+  z-index: 500;
+}
+
+a.previous,
+a.home,
+a.next {
+  padding: 0.5vh 1vh;
+  font-size: 1.5rem;
+  color: #888888;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: solid 1px black;
+  border-radius: 2.5vh;
+  text-decoration: none;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  z-index: 1000;
+}
+
+a.home,
+a.next,
+a.home:hover,
+a.home:active,
+a.next:hover,
+a.next:active {
+  margin-left: 5px;
+}
+
+a.previous:hover,
+a.previous:active,
+a.home:hover,
+a.home:active,
+a.next:hover,
+a.next:active {
+  opacity: 0.4;
+}
+
+/* slides structure */
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 1500vw;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Slide One: title  */
+.one {
+  display: flex;
+  align-items: center;
+}
+
+div.arquetypo_title {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+h1.ancestry {
+  font-size: 2.5rem;
+}
+
+h1.ancestry:hover {
+  transform: scale(3);
+  opacity: 0;
+  transition: all 0.25s;
+}
+
+div.ancestry-futurism {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.arquetypo-letters {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-bottom: 2%;
+  border-bottom: 10px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.letter_a,
+div.letter_r,
+div.letter_c,
+div.letter_h,
+div.letter_e,
+div.letter_t,
+div.letter_y,
+div.letter_p,
+div.letter_o {
+  width: 65px;
+  height: 65px;
+}
+
+div.letter_a {
+  background-image: url("../images/arquetypo/arquetypo-a.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.25s;
+}
+
+div.letter_a:hover {
+  background-image: url("../images/arquetypo/arquetypo-a-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(2);
+  transition: 0.25s;
+}
+
+div.letter_r {
+  background-image: url("../images/arquetypo/arquetypo-r.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.25s;
+}
+
+div.letter_r:hover {
+  background-image: url("../images/arquetypo/arquetypo-r-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(2);
+  transition: 0.25s;
+}
+
+div.letter_c {
+  background-image: url("../images/arquetypo/arquetypo-c.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.25s;
+}
+
+div.letter_c:hover {
+  background-image: url("../images/arquetypo/arquetypo-c-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(2);
+  transition: 0.25s;
+}
+
+div.letter_h {
+  background-image: url("../images/arquetypo/arquetypo-h.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.25s;
+}
+
+div.letter_h:hover {
+  background-image: url("../images/arquetypo/arquetypo-h-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(2);
+  transition: 0.25s;
+}
+
+div.letter_e {
+  background-image: url("../images/arquetypo/arquetypo-e.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.25s;
+}
+
+div.letter_e:hover {
+  background-image: url("../images/arquetypo/arquetypo-e-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(2);
+  transition: 0.25s;
+}
+
+div.letter_t {
+  background-image: url("../images/arquetypo/arquetypo-t.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.25s;
+}
+
+div.letter_t:hover {
+  background-image: url("../images/arquetypo/arquetypo-t-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(2);
+  transition: 0.25s;
+}
+
+div.letter_y {
+  background-image: url("../images/arquetypo/arquetypo-y.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.25s;
+}
+
+div.letter_y:hover {
+  background-image: url("../images/arquetypo/arquetypo-y-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(2);
+  transition: 0.25s;
+}
+
+div.letter_p {
+  background-image: url("../images/arquetypo/arquetypo-p.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.25s;
+}
+
+div.letter_p:hover {
+  background-image: url("../images/arquetypo/arquetypo-p-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(2);
+  transition: 0.25s;
+}
+
+div.letter_o {
+  background-image: url("../images/arquetypo/arquetypo-o.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.25s;
+}
+
+div.letter_o:hover {
+  background-image: url("../images/arquetypo/arquetypo-o-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(2);
+  transition: 0.25s;
+}
+
+div.dream-reality {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1.dream {
+  font-size: 2.5rem;
+  font-style: italic;
+  letter-spacing: 0.8em;
+  transition: all 0.25s;
+}
+
+h1.dream:hover {
+  opacity: 0.4;
+  transform: scale(1.5);
+}
+
+/* Slide One: scroll right */
+h2 {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+/* Slide Two: info text */
+.two {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 100vh;
+}
+
+p.text-arquetypo {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-align: center;
+  color: black;
+  border: 10px solid black;
+  padding: 20px;
+}
+
+.three {
+  background-image: url("../images/arquetypo/arquetypo-01.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.four {
+  background-image: url("../images/arquetypo/arquetypo-02.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.five {
+  background-image: url("../images/arquetypo/arquetypo-03.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.six {
+  background-image: url("../images/arquetypo/arquetypo-04.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.seven {
+  background-image: url("../images/arquetypo/arquetypo-05.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.eight {
+  background-image: url("../images/arquetypo/arquetypo-06.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.nine {
+  background-image: url("../images/arquetypo/arquetypo-07.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.ten {
+  background-image: url("../images/arquetypo/arquetypo-08.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.eleven {
+  background-image: url("../images/arquetypo/arquetypo-09.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.twelve {
+  background-image: url("../images/arquetypo/arquetypo-10.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.thirteen {
+  background-image: url("../images/arquetypo/arquetypo-11.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.fourteen {
+  background-image: url("../images/arquetypo/arquetypo-12.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.fifteen {
+  background-image: url("../images/arquetypo/arquetypo-13.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.sixteen {
+  background-image: url("../images/arquetypo/arquetypo-14.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.seventeen {
+  background-image: url("../images/arquetypo/arquetypo-15.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.eightteen {
+  background-image: url("../images/arquetypo/arquetypo-16.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.nineteen {
+  background-image: url("../images/arquetypo/arquetypo-17.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.twenty {
+  background-image: url("../images/arquetypo/arquetypo-17.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.twenty-one {
+  background-image: url("../images/arquetypo/arquetypo-18.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: black;
+  padding: 50px;
+}
+
+.twenty-two {
+  background-image: url('../images/arquetypo/arquetypo-19.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* Large screens*/
+@media (min-width: 1800px) {
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 2rem;
+  }
+
+  a.home,
+  a.next,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    margin-left: 6px;
+  }
+
+  p.text-arquetypo {
+    font-size: 1.6rem;
+  }
+
+  div.letter_a,
+  div.letter_r,
+  div.letter_c,
+  div.letter_h,
+  div.letter_e,
+  div.letter_t,
+  div.letter_y,
+  div.letter_p,
+  div.letter_o {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+@media (max-width: 1440px) {
+  h1.dream {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  p.text-arquetypo {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1.dream {
+    font-size: 2rem;
+  }
+
+  p.text-arquetypo {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 915px) {
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 1.2rem;
+    z-index: 1000;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p.text-arquetypo {
+    font-size: 0.7rem;
+    line-height: 1.2;
+    margin-top: 0;
+    padding: 5px 40px;
+  }
+}
+
+@media (max-width: 860px) {
+  h1.dream {
+    font-size: 1rem;
+    letter-spacing: 0.4em;
+  }
+
+  h1.ancestry {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:700px) {
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .two {
+    width: 12%;
+  }
+}
+
+/* Landscape iPhone 4 + 5 */
+@media (min-width: 320px) and (max-width: 568px) and (orientation:landscape) {
+  p.text-arquetypo {
+    font-size: 0.5rem;
+  }
+}

@@ -1,0 +1,255 @@
+@font-face {
+  font-family: Frivole Regular;
+  src: url('fonts/Frivole-Regular.otf');
+  src: url('fonts/frivoletrial-regular-webfont.woff2') format('woff2'),
+    url('fonts/frivoletrial-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+/* LOADING */
+div.loading_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #CBCBCB;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+}
+
+.lds-default {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: none;
+}
+
+#video-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  opacity: 0.95;
+}
+
+div.marquee {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  z-index: 100;
+  left: 42.5%;
+  animation: moveDown 25s linear infinite;
+  outline: none;
+}
+
+a.enter {
+  z-index: 100;
+  font-family: Frivole Regular;
+  font-size: 14vw;
+  color: white;
+  text-shadow: 0 0 9px white;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  white-space: nowrap;
+  display: block;
+  position: relative;
+  -webkit-transform: rotate(90deg);
+  /* to support Safari and Android browser */
+  -ms-transform: rotate(90deg);
+  /* to support IE 9 */
+  transform: rotate(90deg);
+  opacity: 0.6;
+  outline: none;
+}
+
+a.enter:hover,
+a.enter:active {
+  outline: none;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100vw);
+  }
+}
+
+@-webkit-keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100vw);
+  }
+}
+
+button {
+  z-index: 50;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  /*top: 0.5rem;
+  left: 39%;*/
+  width: 45px;
+  height: 45px;
+  color: #1e183e;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  text-align: center;
+  display: inline-block;
+  line-height: 0;
+  border: 0;
+}
+
+img {
+  width: 45px;
+  height: 35px;
+  opacity: 0.6;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: transparent;
+  color: white;
+  outline: none;
+}
+
+/* media queries */
+/*iPad in portrait */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  #video-background {
+    display: none;
+  }
+
+  body {
+    background: url('../images/home/home-poster.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: fixed;
+  }
+
+  img {
+    width: 25px !important;
+    height: 20px !important;
+  }
+
+  button {
+    width: 25px !important;
+    height: 20px !important;
+    bottom: 0.5rem !important;
+  }
+
+  a.enter {
+    font-size: 20vw;
+  }
+}
+
+/*iPad in landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #video-background {
+    display: none;
+  }
+
+  body {
+    background: url('../images/home/home-poster.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: fixed;
+  }
+
+  img {
+    width: 25px !important;
+    height: 20px !important;
+  }
+
+  button {
+    width: 25px !important;
+    height: 20px !important;
+    bottom: 0.5rem !important;
+  }
+
+  a.enter {
+    font-size: 20vw;
+  }
+}
+
+/* phones */
+@media (max-width: 767px) {
+  #video-background {
+    display: none;
+  }
+
+  body {
+    background: url('../images/home/home-poster.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: fixed;
+  }
+
+  img {
+    width: 25px !important;
+    height: 20px !important;
+  }
+
+  button {
+    width: 25px !important;
+    height: 20px !important;
+    bottom: 0.5rem !important;
+  }
+
+  a.enter {
+    font-size: 20vw;
+  }
+}

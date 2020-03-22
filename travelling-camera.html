@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>5:40 am</title>
+    <link href="styles/reset.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/travelling-camera.css" />
+  </head>
+
+  <body>
+    <div class="container-content-travelling">
+      <div class="images">
+        <a class="photo" href="travelling_1.jpg">
+          <img src="images/travelling-camera/travelling-1.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_3.jpg">
+          <img src="images/travelling-camera/travelling-3.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_4.jpg">
+          <img src="images/travelling-camera/travelling-4.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_5.jpg">
+          <img src="images/travelling-camera/travelling-5.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_6.jpg">
+          <img src="images/travelling-camera/travelling-6.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_7.jpg">
+          <img src="images/travelling-camera/travelling-7.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_14.jpg">
+          <img src="images/travelling-camera/travelling-14.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_15.jpg">
+          <img src="images/travelling-camera/travelling-15.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_16.jpg">
+          <img src="images/travelling-camera/travelling-16.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_17.jpg">
+          <img src="images/travelling-camera/travelling-17.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_18.jpg">
+          <img src="images/travelling-camera/travelling-18.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_19.jpg">
+          <img src="images/travelling-camera/travelling-19.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_10.jpg">
+          <img src="images/travelling-camera/travelling-10.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_11.jpg">
+          <img src="images/travelling-camera/travelling-11.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_12.jpg">
+          <img src="images/travelling-camera/travelling-12.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_22.jpg">
+          <img src="images/travelling-camera/travelling-22.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_23.jpg">
+          <img src="images/travelling-camera/travelling-23.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_24.jpg">
+          <img src="images/travelling-camera/travelling-24.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_20.jpg">
+          <img src="images/travelling-camera/travelling-20.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_21.jpg">
+          <img src="images/travelling-camera/travelling-21.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_8.jpg">
+          <img src="images/travelling-camera/travelling-8.jpg" />
+        </a>
+
+        <a class="photo" href="travelling_9.jpg">
+          <img src="images/travelling-camera/travelling-9.jpg" />
+        </a>
+      </div>
+
+      <p class="text_travelling">
+        FEELING TIME WITHOUT THINKING <br />
+        STREAM OF CONSCIOUSNESS <br />
+        FREE SPEECH PHOTOGRAPHY <br />
+        HOW DOES 5:40 AM FEEL? <br />
+        DON'T THINK, JUST SHOOT<br /><br />
+
+        A GROUP OF FRIENDS SHARED TWO DISPOSABLE CAMERAS IN BERLIN.<br /><br />
+        EACH PERSON TOOK A FEW PHOTOGRAPHS INSPIRED BY THE TIME 5:40 AM BEFORE
+        PASSING THE CAMERA TO ANOTHER PERSON.
+        <br /><br />
+        THE AIM OF THE GAME WAS TO SPONTANEOUSLY SHOOT HOW 5:40 AM FELT LIKE.
+        THE RESULT IS A COMPILATION OF RAW IMPRESSIONS, ALL SUBJECTIVELY AND
+        FREELY INTERPRETING THIS TIME.
+        <br /><br />
+        <em> CLICK TO DISCOVER THE PHOTOGRAPHS</em>
+      </p>
+    </div>
+
+    <div class="nav">
+      <a class="previous" href="arquetypo.html"> PREVIOUS </a>
+      <a class="home" href="index.html"> HOME </a>
+      <a class="next" href="topography-of-time.html"> NEXT </a>
+    </div>
+
+    <div class="modal">
+      <div class="modal-background">
+        <h1 class="text_modal">"right now, 5:40 am feels like..."</h1>
+      </div>
+      <div class="modal-close">X</div>
+      <div class="modal-content"></div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $("a.photo").on("click", function(e) {
+        $(this).toggleClass("clicked");
+
+        $("div.modal").fadeIn(300);
+
+        $("div.modal-content").html($(this).html());
+
+        e.preventDefault();
+      });
+
+      $("div.modal-close").on("click", function() {
+        $("div.modal").fadeOut(300);
+      });
+    </script>
+  </body>
+</html>

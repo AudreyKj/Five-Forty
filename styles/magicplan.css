@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(231, 233, 231, 1) 43%, rgba(142, 151, 143, 0.5900735294117647) 63%, rgba(153, 250, 153, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(231, 233, 231, 1) 43%, rgba(142, 151, 143, 0.5900735294117647) 63%, rgba(153, 250, 153, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(231, 233, 231, 1) 43%, rgba(142, 151, 143, 0.5900735294117647) 63%, rgba(153, 250, 153, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#99fa99", GradientType=1);
+  background-repeat: repeat;
+}
+
+/* barba transitions
+.fade-leave-active,
+.fade-enter-active {
+  transition: opacity 0.3s ease;
+}
+
+/*barba transitions: initial state
+.fade-leave {
+  opacity: 1;
+}
+
+/* barba transitions: state
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter {
+  opacity: 0 ;
+}
+
+.fade-enter-to {
+  opacity: 0;
+}*/
+/* NAV */
+div.nav {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  height: auto;
+  z-index: 500;
+}
+
+a.previous,
+a.home,
+a.next {
+  padding: 0.5vh 1vh;
+  font-size: 1.5rem;
+  color: #888888;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: solid 1px black;
+  border-radius: 2.5vh;
+  text-decoration: none;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  z-index: 1000;
+}
+
+a.home,
+a.next,
+a.home:hover,
+a.home:active,
+a.next:hover,
+a.next:active {
+  margin-left: 5px;
+}
+
+a.previous:hover,
+a.previous:active,
+a.home:hover,
+a.home:active,
+a.next:hover,
+a.next:active {
+  opacity: 0.4;
+}
+
+/* modal button */
+#modal-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10%;
+  width: 18vw;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  box-shadow: 0 9px #a6a6a6;
+}
+
+#modal-button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+h3 {
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 3rem;
+}
+
+/* Modal Content */
+.modal-background {
+  display: none;
+  position: fixed;
+  padding-top: 15px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 600;
+}
+
+div.modal-content {
+  background-color: #f3f3f3;
+  opacity: 0.95;
+  margin: auto;
+  padding: 15px 50px;
+  border: 1px solid #888;
+  width: 80%;
+  z-index: 650;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+/* Text in modal box */
+h2 {
+  color: black;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.text-magicplan {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+a.unix {
+  color: blue;
+}
+
+ul li {
+  list-style-type: circle;
+  padding-left: 15px;
+}
+
+span.credits {
+  font-style: italic;
+}
+
+/* Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 2.5rem;
+  padding: 0px 10px;
+  font-weight: bold;
+  color: white;
+  background: black;
+  z-index: 150;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Content 1 */
+div.container1 {
+  width: 100%;
+}
+
+video.video-magicplan {
+  width: 100%;
+  height: 100%;
+  margin-top: -5%;
+}
+
+img.girl {
+  position: fixed;
+  top: 3rem;
+  right: 8%;
+  width: 45%;
+  height: auto;
+}
+
+img.avatar {
+  position: absolute;
+  width: 22%;
+  height: auto;
+  top: 4.5rem;
+  right: 37%;
+}
+
+img.robot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: auto;
+  margin-top: 20%;
+}
+
+img.robot,
+img.avatar,
+img.girl {
+  z-index: 20;
+}
+
+div.white-block {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  z-index: 50;
+  margin-top: -5%;
+}
+
+div.green-block {
+  position: absolute;
+  margin-top: 1%;
+  width: 85%;
+  height: 40%;
+  background-color: #c2ff27;
+  z-index: 20;
+}
+
+div.container-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 5%, rgba(231, 233, 231, 1) 20%, rgba(142, 151, 143, 0.5900735294117647) 30%, rgba(153, 250, 153, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 5%, rgba(231, 233, 231, 1) 20%, rgba(142, 151, 143, 0.5900735294117647) 30%, rgba(153, 250, 153, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 5%, rgba(231, 233, 231, 1) 20%, rgba(142, 151, 143, 0.5900735294117647) 30%, rgba(153, 250, 153, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#99fa99", GradientType=1);
+}
+
+img.graph {
+  display: block;
+  right: 0;
+  width: 70%;
+  margin-top: -10%;
+  z-index: 100;
+  transition: transform 0.25s;
+  will-change: transform;
+}
+
+img.trump {
+  width: 100%;
+  z-index: 50;
+}
+
+img.animals {
+  width: 100%;
+  z-index: 50;
+  margin-top: -35%;
+}
+
+/* Pulsing Button */
+.button {
+  position: absolute;
+  margin-top: -75%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #EF3290;
+  border: 10px solid #735C86;
+  border-radius: 100%;
+  animation: pulse 1.2s ease infinite;
+  z-index: 55;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(2);
+  }
+}
+
+/* content 2 */
+div.container-img2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: -65%;
+}
+
+img.robotgirl1,
+img.robotgirl2 {
+  width: 45%;
+}
+
+img.robotgirl2 {
+  margin-top: 30%;
+}
+
+.first {
+  margin-top: 20%;
+}
+
+img.robot3 {
+  width: 20%;
+}
+
+/* content 3 */
+.container-img3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -90%;
+}
+
+img.man-girl1,
+img.man-girl2,
+img.man {
+  width: 45%;
+}
+
+/* content 4 */
+div.container-img4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: -160%;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(231, 233, 231, 1) 43%, rgba(142, 151, 143, 0.5900735294117647) 63%, rgba(153, 250, 153, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(231, 233, 231, 1) 43%, rgba(142, 151, 143, 0.5900735294117647) 63%, rgba(153, 250, 153, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(231, 233, 231, 1) 43%, rgba(142, 151, 143, 0.5900735294117647) 63%, rgba(153, 250, 153, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#99fa99", GradientType=1);
+}
+
+img.dystopia {
+  width: 60%;
+  margin-top: 20%;
+}
+
+img.robot4 {
+  margin-top: 35%;
+}
+
+img.robot4,
+img.videogame {
+  width: 50%;
+}
+
+img.videogame {
+  bottom: 0;
+  right: 0;
+  width: 60%;
+}
+
+img.videogame {
+  transition: transform 0.25s;
+  will-change: transform;
+}
+
+img.graph2 {
+  position: absolute;
+  margin-top: 70%;
+  right: 8%;
+  width: 80%;
+  transition: transform 0.25s;
+  will-change: transform;
+}
+
+/* media queries */
+/* iMac 21, iMac 27*/
+/* Large screens*/
+@media (min-width: 1950px) {
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 2rem;
+  }
+
+  a.home,
+  a.next,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    margin-left: 6px;
+  }
+
+  h3 {
+    font-size: 4.4rem;
+  }
+
+  .modal-background {
+    padding-top: 45px;
+  }
+
+  div.modal-content {
+    width: 60%;
+  }
+
+  .text-magicplan {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 1950px) {
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 2rem;
+  }
+
+  a.home,
+  a.next,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    margin-left: 6px;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  .modal-background {
+    padding-top: 35px;
+  }
+
+  div.modal-content {
+    width: 65%;
+  }
+
+  .text-magicplan {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width:1380px) {
+  h3 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width:1050px) {
+
+  h1,
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .text-magicplan {
+    font-size: 1.2rem;
+  }
+
+  .close {
+    font-size: 1.5rem;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width:915px) {
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 1.2rem;
+  }
+
+  a.home,
+  a.next,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    margin-left: 3px;
+  }
+}
+
+@media(max-width:900px) {
+  img.trump {
+    margin-top: -10%;
+  }
+
+  #modal-button {
+    width: 25vw;
+  }
+}
+
+/* Video background: iPad in portrait
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  video.video-magicplan {
+    visibility: hidden;
+  }
+}
+
+Video background: iPad in landscape
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  video.video-magicplan {
+    visibility: hidden;
+  }
+}*/
+@media (max-width: 785px) {
+  h1 {
+    font-size: 1.5rem;
+    padding-left: 150px;
+  }
+
+  .text-magicplan {
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+}
+
+/* Video background: phones */
+@media (max-width: 767px) {
+  video.video-magicplan {
+    visibility: hidden;
+  }
+}
+
+@media (max-width:700px) {
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 1rem;
+  }
+
+  #modal-button {
+    width: 27vw;
+  }
+
+  div.modal-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-height: 420px) {
+  h3 {
+    padding-top: 10px;
+  }
+
+  #modal-button {
+    height: 40px;
+  }
+}

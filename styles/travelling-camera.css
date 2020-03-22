@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
+
+body {
+  background-image: url('../images/travelling-camera/travelling_background_optimized.jpg');
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* content container */
+div.container-content-travelling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* images */
+div.images {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+img {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  max-width: 100%;
+}
+
+a.photo {
+  float: left;
+  margin: 30px;
+  width: 20%;
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  filter: blur(20px);
+}
+
+a.photo.clicked {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  transition: filter 1s;
+}
+
+/* modal */
+div.modal {
+  display: none;
+}
+
+div.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 1;
+}
+
+h1.text_modal {
+  z-index: 50;
+  font-size: 4rem;
+  text-align: center;
+  text-align: center;
+  color: black;
+  font-family: 'Wallpoet', cursive;
+  margin-top: 5%;
+}
+
+div.modal-close {
+  cursor: pointer;
+  color: black;
+  font-size: 3rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px 25px 20px 25px;
+  z-index: 2;
+}
+
+div.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 500px;
+  background: transparent;
+  z-index: 2;
+}
+
+/* text */
+p.text_travelling {
+  font-size: 1.7rem;
+  line-height: 1.2;
+  text-align: center;
+  width: 70%;
+  color: white;
+  text-shadow: 0 0 10px white;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+/* nav */
+div.nav {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 500;
+}
+
+a.previous,
+a.home,
+a.next {
+  padding: 0.5vh 1vh;
+  font-size: 1.5rem;
+  color: #888888;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: solid 1px black;
+  border-radius: 2.5vh;
+  text-decoration: none;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  z-index: 1000;
+}
+
+a.home,
+a.home:hover,
+a.home:active,
+a.next,
+a.next:hover,
+a.next:active {
+  margin-left: 5px;
+}
+
+a.previous:hover,
+a.previous:active,
+a.home:hover,
+a.home:active,
+a.next:hover,
+a.next:active {
+  opacity: 0.4;
+}
+
+/*media queries */
+/* large screens */
+@media (min-width: 1800px) {
+  p.text_travelling {
+    font-size: 2rem;
+  }
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 2rem;
+  }
+
+  a.home,
+  a.next,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    margin-left: 6px;
+  }
+}
+
+/*IPAD AIR 2*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1.text_modal {
+    font-size: 1.8rem;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 940px) {
+  p.text_travelling {
+    font-size: 1.4rem;
+  }
+
+  div.modal-close {
+    font-size: 2rem;
+  }
+
+  h1.text_modal {
+    font-size: 2rem;
+    padding-top: 30px;
+  }
+}
+
+/* iphone X + XI*/
+@media (min-width : 375px) and (max-width : 870px) and (orientation : landscape) {
+  h1.text_modal {
+    font-size: 0.7rem;
+  }
+
+  img {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 915px) {
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 1.2rem;
+    z-index: 1000;
+  }
+
+  a.home,
+  a.next,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    margin-left: 3px;
+  }
+}
+
+@media (max-width: 780px) {
+  a.photo {
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    filter: blur(8px);
+    margin: 2px;
+    width: 40%;
+  }
+
+  p.text_travelling {
+    font-size: 1.5rem;
+  }
+
+  h1.text_modal {
+    font-size: 1.4rem;
+    padding-bottom: 30px;
+  }
+}
+
+/* iPhone 6, 7, & 8 + Iphone 6 Plus in landscape*/
+@media (min-width: 375px) and (max-width: 736px) and (orientation: landscape) {
+  div.modal-content {
+    width: 40%;
+  }
+}
+
+@media (max-width: 750px) {
+  h1.text_modal {
+    padding-bottom: 50px;
+    font-size: 1.2rem;
+  }
+
+  a.photo {
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    filter: blur(8px);
+  }
+
+  div.modal-close {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:700px) {
+
+  a.previous,
+  a.home,
+  a.next,
+  a.previous:hover,
+  a.previous:active,
+  a.home:hover,
+  a.home:active,
+  a.next:hover,
+  a.next:active {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  p.text_travelling {
+    font-size: 1.2rem;
+  }
+}
+
+/* Portrait iPhone 4 */
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+  div.modal-content {
+    width: 45%;
+  }
+}
+
+@media (max-height: 700px) {
+  h1.text_modal {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  div.modal-close {
+    font-size: 1.5rem;
+    display: block;
+  }
+}
+
+@media (max-height: 550px) {
+  h1.text_modal {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-height: 450px) {
+  h1.text_modal {
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+
+  div.modal-close {
+    font-size: 1rem;
+  }
+}
+
+@media (max-height: 250px) {
+  h1.text_modal {
+    font-size: 0.9rem;
+    margin-top: -20px;
+  }
+
+  div.modal-close {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  p.text_travelling {
+    font-size: 0.9rem;
+  }
+
+  div.modal-close {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title> 5:40 am</title>
+  <link href="styles/reset.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/home.css">
+</head>
+
+<body>
+
+  <div class="loading_wrapper">
+    <div class="lds-default">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <video autoplay muted loop id="video-background">
+    <source src="images/home/home-video.mp4" type="video/mp4">
+  </video>
+
+  <div class="marquee">
+    <a class="enter" href="about.html"> enter enter enter enter enter enter enter enter enter enter </a>
+  </div>
+
+  <audio autoplay loop id="audio_fiveforty">
+    <source src="images/home/fiveforty-sound2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <button onclick="togglePlay()" type="button"> <img src="images/home/sound-icon1.png"></button>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+
+  <script>
+    //loading
+    $(window).on("load", function() {
+      $(".loading_wrapper").fadeOut("slow");
+    });
+
+    //audio
+    var audio = document.getElementById("audio_fiveforty");
+    var play = false;
+
+
+    function togglePlay() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    };
+
+    //marquee
+    function marquee() {
+      const title = "enter enter enter";
+      const marqueeText = new Array(50).fill(title);
+
+      const marquee = document.querySelector(".marquee a");
+      marquee.innerHTML = marqueeText.join('-');
+    }
+
+    marquee()
+  </script>
+
+</body>
+
+</html>

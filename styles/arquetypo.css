@@ -5,32 +5,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-/* barba transitions
-.fade-leave-active,
-.fade-enter-active {
-  transition: opacity 0.3s ease;
-}
-
-/*barba transitions: initial state
-.fade-leave {
-  opacity: 1;
-}
-
-/* barba transitions: state
-.fade-leave-to {
-  opacity: 0;
-}
-
-.fade-enter {
-  opacity: 0 ;
-}
-
-.fade-enter-to {
-  opacity: 0;
-}*/
 /* NAV */
 div.nav {
   position: fixed;
@@ -456,7 +433,7 @@ p.text-arquetypo {
 }
 
 .twenty-two {
-  background-image: url('../images/arquetypo/arquetypo-19.png');
+  background-image: url("../images/arquetypo/arquetypo-19.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -464,7 +441,6 @@ p.text-arquetypo {
 
 /* Large screens*/
 @media (min-width: 1800px) {
-
   a.previous,
   a.home,
   a.next,
@@ -528,7 +504,6 @@ p.text-arquetypo {
 }
 
 @media (max-width: 915px) {
-
   a.previous,
   a.home,
   a.next,
@@ -565,8 +540,7 @@ p.text-arquetypo {
   }
 }
 
-@media (max-width:700px) {
-
+@media (max-width: 700px) {
   a.previous,
   a.home,
   a.next,
@@ -587,7 +561,7 @@ p.text-arquetypo {
 }
 
 /* Landscape iPhone 4 + 5 */
-@media (min-width: 320px) and (max-width: 568px) and (orientation:landscape) {
+@media (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
   p.text-arquetypo {
     font-size: 0.5rem;
   }

@@ -1,6 +1,6 @@
 @font-face {
   font-family: Frivole Regular;
-  src: url('fonts/Frivole-Regular.otf');
+  src: url("fonts/Frivole-Regular.otf");
 }
 
 * {
@@ -18,32 +18,9 @@ body {
   height: 100%;
   padding: 0;
   margin-top: 25px;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-/* barba transitions
-.fade-leave-active,
-.fade-enter-active {
-  transition: opacity 0.3s ease;
-}
-
-/*barba transitions: initial state
-.fade-leave {
-  opacity: 1;
-}
-
-/* barba transitions: state
-.fade-leave-to {
-  opacity: 0;
-}
-
-.fade-enter {
-  opacity: 0 ;
-}
-
-.fade-enter-to {
-  opacity: 0;
-}*/
 div.top-gradient {
   width: 100%;
   height: 3rem;
@@ -52,11 +29,23 @@ div.top-gradient {
   top: 0;
   left: 0;
   right: 0;
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
   /* IE6-9 */
@@ -68,8 +57,8 @@ a.start:active,
 time.fiveforty {
   text-decoration: none;
   color: grey;
-  text-shadow: 0 0 0.1em #ffffff, 0 0 0.15em #ffffff, 0 0 0.2em #ffffff, 0 0 0.25em #ffffff,
-    0 0 0.3em #ffffff, 0 0 0.3em #ffffff, 0 0 0.3em #ffffff;
+  text-shadow: 0 0 0.1em #ffffff, 0 0 0.15em #ffffff, 0 0 0.2em #ffffff,
+    0 0 0.25em #ffffff, 0 0 0.3em #ffffff, 0 0 0.3em #ffffff, 0 0 0.3em #ffffff;
   z-index: 10000;
   font-size: 2.5rem;
 }
@@ -101,7 +90,8 @@ div.title-about {
   color: #55535e;
   /*opacity: 0.8;
   /*text-shadow: 0 0 10px #d8d8d8;*/
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.4),
+    1px 1px 1px rgba(0, 0, 0, 0.4);
   line-height: 1.1;
   opacity: 0.8;
   padding-top: 5px;
@@ -252,7 +242,6 @@ span.italic {
 }
 
 @media (max-width: 1220px) {
-
   p.about-text,
   span.poem,
   time.fiveforty,
@@ -292,7 +281,6 @@ span.italic {
 }
 
 @media (max-width: 1045px) {
-
   p.about-text,
   span.poem,
   time.fiveforty,
@@ -323,7 +311,6 @@ span.italic {
 }
 
 @media (max-width: 915px) {
-
   time.fiveforty,
   a.start {
     top: 17rem;
@@ -348,7 +335,6 @@ span.italic {
 }
 
 @media (max-width: 860px) {
-
   time.fiveforty,
   a.start {
     top: 15rem;
@@ -356,7 +342,6 @@ span.italic {
 }
 
 @media (max-width: 790px) {
-
   time.fiveforty,
   a.start,
   a.start:hover,
@@ -388,7 +373,6 @@ span.italic {
 }
 
 @media (max-width: 770px) {
-
   time.fiveforty,
   a.start,
   a.start:hover,
@@ -446,7 +430,7 @@ span.italic {
 }
 
 /* iphone 4 and 5 portrait */
-@media (min-width: 320px) and (max-width: 568px) and (orientation : portrait) {
+@media (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
   span.poem {
     padding-top: 82%;
   }
@@ -460,7 +444,7 @@ span.italic {
 }
 
 /* iphone 4 and 5 landscape */
-@media (min-width: 320px) and (max-width: 568px) and (orientation : landscape) {
+@media (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
   span.poem {
     padding-top: 42%;
   }

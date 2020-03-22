@@ -1,42 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
 
 body {
   width: 100%;
   margin: 0;
   padding: 0;
   height: 100vh;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(231, 233, 231, 1) 43%, rgba(142, 151, 143, 0.5900735294117647) 63%, rgba(153, 250, 153, 1) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(231, 233, 231, 1) 43%, rgba(142, 151, 143, 0.5900735294117647) 63%, rgba(153, 250, 153, 1) 100%);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(231, 233, 231, 1) 43%, rgba(142, 151, 143, 0.5900735294117647) 63%, rgba(153, 250, 153, 1) 100%);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(231, 233, 231, 1) 43%,
+    rgba(142, 151, 143, 0.5900735294117647) 63%,
+    rgba(153, 250, 153, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(231, 233, 231, 1) 43%,
+    rgba(142, 151, 143, 0.5900735294117647) 63%,
+    rgba(153, 250, 153, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(231, 233, 231, 1) 43%,
+    rgba(142, 151, 143, 0.5900735294117647) 63%,
+    rgba(153, 250, 153, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#99fa99", GradientType=1);
   background-repeat: repeat;
 }
 
-/* barba transitions
-.fade-leave-active,
-.fade-enter-active {
-  transition: opacity 0.3s ease;
-}
-
-/*barba transitions: initial state
-.fade-leave {
-  opacity: 1;
-}
-
-/* barba transitions: state
-.fade-leave-to {
-  opacity: 0;
-}
-
-.fade-enter {
-  opacity: 0 ;
-}
-
-.fade-enter-to {
-  opacity: 0;
-}*/
 /* NAV */
 div.nav {
   position: fixed;
@@ -104,7 +99,7 @@ a.next:active {
 
 h3 {
   color: white;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 3rem;
 }
 
@@ -134,7 +129,7 @@ div.modal-content {
 }
 
 h1 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   color: black;
   font-size: 3rem;
   text-align: center;
@@ -257,9 +252,27 @@ div.container-img {
   align-items: flex-end;
   z-index: 100;
   background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 5%, rgba(231, 233, 231, 1) 20%, rgba(142, 151, 143, 0.5900735294117647) 30%, rgba(153, 250, 153, 1) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 5%, rgba(231, 233, 231, 1) 20%, rgba(142, 151, 143, 0.5900735294117647) 30%, rgba(153, 250, 153, 1) 100%);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 5%, rgba(231, 233, 231, 1) 20%, rgba(142, 151, 143, 0.5900735294117647) 30%, rgba(153, 250, 153, 1) 100%);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(231, 233, 231, 1) 20%,
+    rgba(142, 151, 143, 0.5900735294117647) 30%,
+    rgba(153, 250, 153, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(231, 233, 231, 1) 20%,
+    rgba(142, 151, 143, 0.5900735294117647) 30%,
+    rgba(153, 250, 153, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(231, 233, 231, 1) 20%,
+    rgba(142, 151, 143, 0.5900735294117647) 30%,
+    rgba(153, 250, 153, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#99fa99", GradientType=1);
 }
 
@@ -291,8 +304,8 @@ img.animals {
   left: 50%;
   width: 50px;
   height: 50px;
-  background-color: #EF3290;
-  border: 10px solid #735C86;
+  background-color: #ef3290;
+  border: 10px solid #735c86;
   border-radius: 100%;
   animation: pulse 1.2s ease infinite;
   z-index: 55;
@@ -354,9 +367,27 @@ div.container-img4 {
   align-items: flex-end;
   margin-top: -160%;
   background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(231, 233, 231, 1) 43%, rgba(142, 151, 143, 0.5900735294117647) 63%, rgba(153, 250, 153, 1) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(231, 233, 231, 1) 43%, rgba(142, 151, 143, 0.5900735294117647) 63%, rgba(153, 250, 153, 1) 100%);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(231, 233, 231, 1) 43%, rgba(142, 151, 143, 0.5900735294117647) 63%, rgba(153, 250, 153, 1) 100%);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(231, 233, 231, 1) 43%,
+    rgba(142, 151, 143, 0.5900735294117647) 63%,
+    rgba(153, 250, 153, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(231, 233, 231, 1) 43%,
+    rgba(142, 151, 143, 0.5900735294117647) 63%,
+    rgba(153, 250, 153, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(231, 233, 231, 1) 43%,
+    rgba(142, 151, 143, 0.5900735294117647) 63%,
+    rgba(153, 250, 153, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#99fa99", GradientType=1);
 }
 
@@ -398,7 +429,6 @@ img.graph2 {
 /* iMac 21, iMac 27*/
 /* Large screens*/
 @media (min-width: 1950px) {
-
   a.previous,
   a.home,
   a.next,
@@ -438,7 +468,6 @@ img.graph2 {
 }
 
 @media (min-width: 1800px) and (max-width: 1950px) {
-
   a.previous,
   a.home,
   a.next,
@@ -477,14 +506,13 @@ img.graph2 {
   }
 }
 
-@media (max-width:1380px) {
+@media (max-width: 1380px) {
   h3 {
     font-size: 2.2rem;
   }
 }
 
-@media (max-width:1050px) {
-
+@media (max-width: 1050px) {
   h1,
   h3 {
     font-size: 2rem;
@@ -502,8 +530,7 @@ img.graph2 {
   }
 }
 
-@media (max-width:915px) {
-
+@media (max-width: 915px) {
   a.previous,
   a.home,
   a.next,
@@ -526,7 +553,7 @@ img.graph2 {
   }
 }
 
-@media(max-width:900px) {
+@media (max-width: 900px) {
   img.trump {
     margin-top: -10%;
   }
@@ -571,8 +598,7 @@ Video background: iPad in landscape
   }
 }
 
-@media (max-width:700px) {
-
+@media (max-width: 700px) {
   a.previous,
   a.home,
   a.next,

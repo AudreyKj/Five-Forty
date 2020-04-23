@@ -10,7 +10,7 @@ Check out the project's second issue: [3:10 PM ](https://www.syntheticvelvet-thr
 
 ## Features
 
-This website features creative works created by contributors from diverse disciplines (photography, video, digital design, writing). All the works are inspired by the time 5:40 am. <br />
+This website features creative works created by contributors from diverse disciplines (photography, video, digital design, writing). All the works are inspired by the time 5:40 am. <br /><br />
 The website features a creative, interactive design for a unique user experience.
 
 ## Credits

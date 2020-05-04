@@ -4,14 +4,13 @@
 
 synthetic velvet is a creative project which explores the concept of time. Each issue takes the form of a website and is themed around one specific hour.
 
-Since launching, synthetic velvet has been exhibited as a part of digital culture program Vorspiel organized by festivals CTM and Transmediale in Berlin as well as in design exhibition [VABF](http://vancouverartbookfair.com/19/about/) in Vancouver.
+Since launching, synthetic velvet has been exhibited internationally in art and design exhibitions (Vorspiel organized by CTM/Transmediale in Berlin, design exhibition [VABF](http://vancouverartbookfair.com/19/about/) in Vancouver)
 
-Check out the project's second issue: [3:10 PM ](https://www.syntheticvelvet-threeten.com/)<br />
+Check out the project's second issue: [3:10 PM ](https://www.syntheticvelvet-threeten.com/)
 
 ## Features
 
 This website features creative works created by contributors from diverse disciplines (photography, video, digital design, writing). All the works are inspired by the time 5:40 am. <br /><br />
-The website features a creative, interactive design for a unique user experience.
 
 ## Credits
 
@@ -23,9 +22,22 @@ creative content contributors: Camila Ayala, Helene Belaunde, Audrey Kadjar, Lin
 
 **Stack**: HTML, CSS, JavaScript, jQuery <br />
 
+## Design & color palette
+
+<p align="center">
+<img width="150" height="250" src="palette.jpg">
+<p align="center">
+dark blue, #1d1a2c </br>
+grey, #8a898b </br>
+light grey, #bbbbbb </br>
+black, #333333 </br>
+</p>
+</p>
+
+The website features a creative, interactive design for a unique user experience.
+
 ## Visuals
 
-![screenshot](screenshot_1.png)
 ![screenshot](screenshot_2.png)
 ![screenshot](screenshot_3.png)
 ![screenshot](screenshot_4.png)

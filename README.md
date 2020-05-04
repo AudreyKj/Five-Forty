@@ -34,7 +34,7 @@ black, #333333 </br>
 </p>
 </p>
 
-The website features a creative, interactive design for a unique user experience.
+<p align="center">The website features a creative, interactive design for a unique user experience.</p>
 
 ## Visuals
 

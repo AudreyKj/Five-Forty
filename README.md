@@ -14,7 +14,7 @@ This website features creative works created by contributors from diverse discip
 
 ## Credits
 
-My role involved designing and developing the website as well as coordinating its production collaborating with contributors. <br />
+My role involved designing and developing the website as well as coordinating its production while collaborating with contributors. <br />
 
 creative content contributors: Camila Ayala, Helene Belaunde, Audrey Kadjar, Linhui Li, Gulce Masrabaci, Eduardo Taborda
 
@@ -22,22 +22,11 @@ creative content contributors: Camila Ayala, Helene Belaunde, Audrey Kadjar, Lin
 
 **Stack**: HTML, CSS, JavaScript, jQuery <br />
 
-## Design & color palette
-
-<p align="center">
-<img width="150" height="250" src="palette.jpg">
-<p align="center">
-dark blue, #1d1a2c </br>
-grey, #8a898b </br>
-light grey, #bbbbbb </br>
-black, #333333 </br>
-</p>
-</p>
-
-<p align="center">The website features a creative, interactive design for a unique user experience.</p>
-
 ## Visuals
 
+![screenshot](screenshot_1.png)
+![screenshot](screenshot_5.png)
 ![screenshot](screenshot_2.png)
+![screenshot](screenshot_6.png)
 ![screenshot](screenshot_3.png)
 ![screenshot](screenshot_4.png)

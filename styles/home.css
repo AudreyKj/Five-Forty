@@ -1,8 +1,8 @@
 @font-face {
   font-family: Frivole Regular;
-  src: url('fonts/Frivole-Regular.otf');
-  src: url('fonts/frivoletrial-regular-webfont.woff2') format('woff2'),
-    url('fonts/frivoletrial-regular-webfont.woff') format('woff');
+  src: url("fonts/Frivole-Regular.otf");
+  src: url("fonts/frivoletrial-regular-webfont.woff2") format("woff2"),
+    url("fonts/frivoletrial-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,10 @@ body {
   background-color: white;
 }
 
+img.preview {
+  display: none;
+}
+
 /* LOADING */
 div.loading_wrapper {
   width: 100%;
@@ -31,7 +35,7 @@ div.loading_wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #CBCBCB;
+  background-color: #cbcbcb;
   opacity: 0.6;
   display: flex;
   justify-content: center;
@@ -162,7 +166,7 @@ button:active {
   }
 
   body {
-    background: url('../images/home/home-poster.png');
+    background: url("../images/home/home-poster.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -195,7 +199,7 @@ button:active {
   }
 
   body {
-    background: url('../images/home/home-poster.png');
+    background: url("../images/home/home-poster.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -228,7 +232,7 @@ button:active {
   }
 
   body {
-    background: url('../images/home/home-poster.png');
+    background: url("../images/home/home-poster.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

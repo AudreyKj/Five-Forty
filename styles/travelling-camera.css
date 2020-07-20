@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Wallpoet&display=swap");
 
 body {
-  background-image: url('../images/travelling-camera/travelling_background_optimized.jpg');
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  background-image: url("../images/travelling-camera/travelling_background_optimized.jpg");
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
@@ -68,7 +68,7 @@ h1.text_modal {
   text-align: center;
   text-align: center;
   color: black;
-  font-family: 'Wallpoet', cursive;
+  font-family: "Wallpoet", cursive;
   margin-top: 5%;
 }
 
@@ -119,7 +119,7 @@ a.next {
   padding: 0.5vh 1vh;
   font-size: 1.5rem;
   color: #888888;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.7);
   border: solid 1px black;
   border-radius: 2.5vh;
   text-decoration: none;
@@ -201,7 +201,7 @@ a.next:active {
 }
 
 /* iphone X + XI*/
-@media (min-width : 375px) and (max-width : 870px) and (orientation : landscape) {
+@media (min-width: 375px) and (max-width: 870px) and (orientation: landscape) {
   h1.text_modal {
     font-size: 0.7rem;
   }
@@ -212,7 +212,6 @@ a.next:active {
 }
 
 @media (max-width: 915px) {
-
   a.previous,
   a.home,
   a.next,
@@ -279,8 +278,7 @@ a.next:active {
   }
 }
 
-@media (max-width:700px) {
-
+@media (max-width: 700px) {
   a.previous,
   a.home,
   a.next,

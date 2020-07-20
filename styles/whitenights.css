@@ -242,7 +242,7 @@ img.arrow {
 
 /* media queries */
 /* iMac 21*/
-@media (min-width:1800px) {
+@media (min-width: 1800px) {
   h1.whitenights {
     font-size: 3rem;
     margin-bottom: 3%;
@@ -280,7 +280,6 @@ img.arrow {
 }
 
 @media (max-width: 1240px) {
-
   button.controls,
   button.controls2 {
     right: 5%;
@@ -315,7 +314,6 @@ img.arrow {
 }
 
 @media (max-width: 915px) {
-
   a.previous,
   a.home,
   a.next,
@@ -340,7 +338,6 @@ img.arrow {
 }
 
 @media (max-width: 850px) {
-
   button.controls,
   button.controls2 {
     right: 3%;
@@ -360,7 +357,7 @@ img.arrow {
 }
 
 /* iphone X */
-@media (min-width : 375px) and (max-width : 812px) and (orientation : landscape) {
+@media (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   img.image-slides {
     width: 35%;
   }
@@ -396,8 +393,7 @@ img.arrow {
   }
 }
 
-@media (max-width:700px) {
-
+@media (max-width: 700px) {
   a.previous,
   a.home,
   a.next,
@@ -412,7 +408,7 @@ img.arrow {
 }
 
 /* iPhone 6, 7, & 8 in landscape*/
-@media (min-width: 375px) and (max-width: 667px) and (orientation:landscape) {
+@media (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
   h1.whitenights {
     font-size: 1.9rem;
     filter: blur(1px);
@@ -440,7 +436,7 @@ img.arrow {
 }
 
 /* iPad Mini in portrait & landscape */
-@media (min-width : 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   h1.whitenights {
     font-size: 2rem;
     filter: blur(2px);
@@ -450,7 +446,7 @@ img.arrow {
 }
 
 /* iPhone 6, 7, & 8 in portrait*/
-@media (min-width: 375px) and (max-width:736px) and (orientation: portrait) {
+@media (min-width: 375px) and (max-width: 736px) and (orientation: portrait) {
   img.image-slides {
     width: 70%;
   }
@@ -468,7 +464,7 @@ img.arrow {
 }
 
 /* iPhone 6, 7, & 8 in landscape*/
-@media (min-width: 375px) and (max-width: 736px) and (orientation:landscape) {
+@media (min-width: 375px) and (max-width: 736px) and (orientation: landscape) {
   h1.whitenights {
     font-size: 1.2rem;
     filter: blur(1px);
@@ -514,7 +510,7 @@ img.arrow {
   }
 }
 
-@media (max-height:500px) {
+@media (max-height: 500px) {
   h1.whitenights {
     font-size: 1.2rem;
     margin-bottom: 3%;
@@ -529,7 +525,6 @@ img.arrow {
 }
 
 @media (max-width: 500px) {
-
   p.whitenights_text,
   span.credits {
     font-size: 0.6rem;
@@ -568,13 +563,13 @@ img.arrow {
 }
 
 /* iPhone 4/4S (landscape mode)*/
-@media (min-width: 320px) and (max-width: 480px) and (orientation:landscape) {
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   h1.whitenights {
     margin-bottom: 3%;
   }
 }
 
-@media (max-height:280px) {
+@media (max-height: 280px) {
   div.nav {
     bottom: 0.5rem;
   }

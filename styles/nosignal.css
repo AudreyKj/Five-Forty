@@ -1,8 +1,8 @@
 body {
-  background-image: url('../images/nosignal/nosignal.jpg');
+  background-image: url("../images/nosignal/nosignal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -53,8 +53,8 @@ a.home,
 a.next {
   padding: 0.5vh 1vh;
   font-size: 1.5rem;
-  color: #888888;
-  background-color: rgba(255, 255, 255, 0.85);
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
   border: solid 1px black;
   border-radius: 2.5vh;
   text-decoration: none;
@@ -83,8 +83,7 @@ a.next:active {
   opacity: 0.4;
 }
 
-@media (min-width:1800px) {
-
+@media (min-width: 1800px) {
   a.previous,
   a.home,
   a.next,
@@ -108,7 +107,6 @@ a.next:active {
 }
 
 @media (max-width: 915px) {
-
   a.previous,
   a.home,
   a.next,
@@ -181,8 +179,7 @@ a.next:active {
   }
 }
 
-@media (max-width:700px) {
-
+@media (max-width: 700px) {
   span.credits,
   a.previous,
   a.home,

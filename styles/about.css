@@ -145,7 +145,7 @@ span.poem {
 
 p.about-text,
 span.poem {
-  background: url("../images/about/velvet6.jpg");
+  background: url("../images/velvet6.jpg");
   background-size: cover;
   -webkit-font-smoothing: antialiased;
   -webkit-background-clip: text;
@@ -162,7 +162,7 @@ span.poem {
 a.linksv,
 a.linksv:hover,
 a.linksv:visited {
-  background: url("../images/about/velvet6.jpg");
+  background: url("../images/velvet6.jpg");
   background-size: cover;
   -webkit-font-smoothing: antialiased;
   -webkit-background-clip: text;

@@ -1,101 +1,101 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <title>5:40 am</title>
-    <link href="styles/reset.css" type="text/css" rel="stylesheet" />
-    <link href="styles/about.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <!-- title-->
-    <div class="title-about">
-      <span class="syntheticvelvet_intro"> synthetic velvet </span>
-      <span class="slogan"> a digital love letter to time </span>
-      <span class="issue1_top"> issue i - five forty </span>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <title>5:40 am</title>
+  <link href="styles/reset.css" type="text/css" rel="stylesheet" />
+  <link href="styles/about.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- title-->
+  <div class="title-about">
+    <span class="syntheticvelvet_intro"> synthetic velvet </span>
+    <span class="slogan"> a digital love letter to time </span>
+    <span class="issue1_top"> issue i - five forty </span>
+  </div>
+
+  <!-- Time and Start -->
+  <a class="start" href="arquetypo.html"> START </a>
+  <time class="fiveforty" datetime="min:sec">05 : 40</time>
+
+  <!-- Top white gradient and content -->
+  <div class="wrapper">
+    <div class="top-gradient"></div>
+    <div class="container-about">
+      <span class="poem">
+        I watch you sleep as I wake up,
+        <br />
+        I get ready but fall back again,
+        <br />
+        I can’t remember, I can just imagine,
+        <br />
+        Stuck in limbo, the world of bifurcations,
+        <br />
+        5:40 am, let’s go.‍ ‍<br />‍</span>
+
+      <p class="about-text">
+        5:40 am is a nebulous zone between two cycles in which boundaries
+        between dream and reality are blurred. At the intersection of night
+        and day, this empty time slot forms a grey area where flashback
+        thoughts and troubled fantasies emerge.
+        <br /><br />
+        <a class="linksv" href="https://www.syntheticvelvet.com">
+          synthetic velvet
+        </a>
+        is a Berlin-based art project and magazine imaginatively exploring the
+        concept of time. It focuses on one specific hour per issue and builds
+        a different website for each edition. <br /><br />
+        For its first issue, synthetic velvet explores the time 5:40 am. Six
+        artists contributed with exclusive works spanning illustration,
+        creative writing, photography, and video.
+        <br /><br />
+        A celebration of time through code, this issue brings all the works
+        together into an imaginative digital object. <br /><br />
+        <span class="italic"> // launched Dec 2018 </span>
+        <br /><br />
+        CREDITS <br />
+        Contributors: Camila Ayala, Hélène Belaunde, Linhui Li,
+        Gülce Maşrabacı, Eduardo Taborda<br />
+        + special thanks to Anne, Maureen, and Leonid <br /> web development:<br />
+        Audrey Kadjar<br /><br />
+
+        second issue:
+        <a class="linksv" href="https://www.syntheticvelvet-threeten.com/">
+          3:10 PM - THREE TEN
+        </a>
+        <br />
+      </p>
     </div>
+  </div>
 
-    <!-- Time and Start -->
-    <a class="start" href="arquetypo.html"> START </a>
-    <time class="fiveforty" datetime="min:sec">05 : 40</time>
+  <script>
+    //5:40 count
+    var count = document.getElementsByTagName("time").item(0);
 
-    <!-- Top white gradient and content -->
-    <div class="wrapper">
-      <div class="top-gradient"></div>
-      <div class="container-about">
-        <span class="poem">
-          I watch you sleep as I wake up,
-          <br />
-          I get ready but fall back again,
-          <br />
-          I can’t remember, I can just imagine,
-          <br />
-          Stuck in limbo, the world of bifurcations,
-          <br />
-          5:40 am, let’s go.‍ ‍<br />‍</span
-        >
+    var i;
 
-        <p class="about-text">
-          5:40 am is a nebulous zone between two cycles in which boundaries
-          between dream and reality are blurred. At the intersection of night
-          and day, this empty time slot forms a grey area where flashback
-          thoughts and troubled fantasies emerge.
-          <br /><br />
-          <a class="linksv" href="https://www.syntheticvelvet.com">
-            synthetic velvet
-          </a>
-          is a Berlin-based art project and magazine imaginatively exploring the
-          concept of time. It focuses on one specific hour per issue and builds
-          a different website for each edition. <br /><br />
-          For its first issue, synthetic velvet explores the time 5:40 am. Six
-          artists contributed with exclusive works spanning illustration,
-          creative writing, photography, and video.
-          <br /><br />
-          A celebration of time through code, this issue brings all the works
-          together into an imaginative digital object. <br /><br />
-          <span class="italic"> // launched Dec 2018 & updated Nov 2019 </span>
-          <br /><br />
-          CREDITS <br />
-          Contributors: Camila Ayala, Hélène Belaunde, Audrey Kadjar, Linhui Li,
-          Gülce Maşrabacı, Eduardo Taborda<br />
-          + special thanks to Anne, Maureen, and Leonid <br />founder, art
-          direction, web development:<br />
-          Audrey Kadjar<br /><br />
+    var format = function (t) {
+      var sliced = t.slice(-2, -1) + t.slice(-1);
+      var slicedInt = parseInt(sliced);
+      slicedInt = slicedInt % 59;
+      if (slicedInt % 59 == 0) {
+        slicedInt = 39;
+      }
+      slicedInt += 1;
+      count.firstChild.data = "05:" + slicedInt;
+    };
+    setInterval(function () {
+      format(count.firstChild.data);
+    }, 1000);
+  </script>
+</body>
 
-          more info on
-          <a class="linksv" href="https://www.syntheticvelvet.com">
-            www.syntheticvelvet.com
-          </a>
-          <br />
-        </p>
-      </div>
-    </div>
-
-    <script>
-      //5:40 count
-      var count = document.getElementsByTagName("time").item(0);
-
-      var i;
-
-      var format = function(t) {
-        var sliced = t.slice(-2, -1) + t.slice(-1);
-        var slicedInt = parseInt(sliced);
-        slicedInt = slicedInt % 59;
-        if (slicedInt % 59 == 0) {
-          slicedInt = 39;
-        }
-        slicedInt += 1;
-        count.firstChild.data = "05:" + slicedInt;
-      };
-      setInterval(function() {
-        format(count.firstChild.data);
-      }, 1000);
-    </script>
-  </body>
 </html>
